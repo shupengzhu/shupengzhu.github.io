@@ -3,113 +3,182 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="AtmoNex LLC provides scientific computing, environmental modeling, data analytics, remote sensing, GIS, AI, and custom software consulting services." />
-  <title>AtmoNex LLC | Scientific & Environmental Technology Consulting</title>
+  <meta name="description" content="AtmoNex LLC builds vertical AI agents, scientific simulation platforms, CFD workflows, world-model systems, atmospheric and aerosol modeling solutions, and custom scientific software." />
+  <title>AtmoNex LLC | AI Agents, Scientific Simulation & Digital Intelligence</title>
   <style>
-    :root{--bg:#f6f8fb;--panel:#fff;--text:#182230;--muted:#5f6b7a;--line:#e5e9f0;--accent:#2457d6;--accent-soft:#eef3ff;--dark:#102243;--max:1080px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:var(--bg);line-height:1.65}a{color:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:0 auto}header{background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:800;letter-spacing:.2px;font-size:1.12rem;text-decoration:none}.navlinks{display:flex;gap:20px;flex-wrap:wrap}.navlinks a{color:var(--muted);text-decoration:none;font-size:.93rem}.hero{padding:92px 0 70px;background:linear-gradient(180deg,#fff 0%,#f6f8fb 100%)}.eyebrow{display:inline-block;padding:7px 11px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-weight:700;font-size:.82rem;letter-spacing:.02em;margin-bottom:20px}h1{font-size:clamp(2.4rem,6vw,4.5rem);line-height:1.04;letter-spacing:-.045em;margin:0 0 22px;max-width:900px}.lead{font-size:clamp(1.06rem,2.2vw,1.28rem);color:var(--muted);max-width:790px;margin:0}.cta{display:inline-block;margin-top:26px;padding:11px 16px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700}section{padding:70px 0}h2{font-size:clamp(1.75rem,4vw,2.45rem);letter-spacing:-.025em;margin:0 0 14px}.section-intro{color:var(--muted);max-width:780px;margin:0 0 34px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:25px;box-shadow:0 8px 24px rgba(20,34,55,.035)}.card h3{margin:0 0 9px;font-size:1.08rem}.card p{margin:0;color:var(--muted);font-size:.96rem}.band{background:var(--dark);color:#fff}.band .section-intro,.band p{color:#ccd6e6}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.step-num{color:#8fb2ff;font-weight:800;margin-bottom:8px}.step h3{margin:0 0 8px}.step p{margin:0;color:#ccd6e6}.box{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:30px;max-width:860px}.box dl{display:grid;grid-template-columns:180px 1fr;gap:12px 20px;margin:0}.box dt{font-weight:700}.box dd{margin:0;color:var(--muted)}.legal-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.legal-grid h3{margin-top:0}.legal-grid p,.legal-grid li{color:var(--muted)}footer{border-top:1px solid var(--line);background:#fff;padding:30px 0;color:var(--muted);font-size:.9rem}footer a{color:var(--accent)}
-    @media(max-width:820px){.grid,.steps,.legal-grid{grid-template-columns:1fr}.nav{align-items:flex-start;padding:18px 0;flex-direction:column}.hero{padding-top:65px}.box dl{grid-template-columns:1fr;gap:4px}.box dd{margin-bottom:12px}}
+    :root{
+      --bg:#07101f;--bg2:#0b1628;--panel:#0e1b31;--panel2:#101f39;--text:#f5f8ff;--muted:#a9b8cf;
+      --line:rgba(255,255,255,.10);--cyan:#61d8ff;--blue:#5d7cff;--violet:#8b6cff;--green:#7de2b8;
+      --max:1180px;--shadow:0 24px 70px rgba(0,0,0,.28)
+    }
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:var(--bg);line-height:1.65;overflow-x:hidden}a{color:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:0 auto}
+    header{position:sticky;top:0;z-index:30;background:rgba(7,16,31,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.2px;text-decoration:none}.brandmark{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--cyan),var(--blue) 58%,var(--violet));box-shadow:0 0 30px rgba(97,216,255,.25)}.navlinks{display:flex;gap:22px;flex-wrap:wrap}.navlinks a{color:#bfd0e7;text-decoration:none;font-size:.92rem}.navlinks a:hover{color:#fff}
+    .hero{position:relative;isolation:isolate;min-height:760px;display:flex;align-items:center;padding:88px 0 82px;background:radial-gradient(circle at 74% 28%,rgba(93,124,255,.22),transparent 28%),radial-gradient(circle at 12% 18%,rgba(97,216,255,.10),transparent 22%),linear-gradient(180deg,#07101f 0%,#091426 100%)}.hero:before{content:"";position:absolute;inset:0;z-index:-2;background-image:linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,#000,transparent 85%)}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:7px 12px;border:1px solid rgba(97,216,255,.22);border-radius:999px;background:rgba(97,216,255,.07);color:#9ce8ff;font-weight:750;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}.eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 16px var(--cyan)}h1{font-size:clamp(3rem,6.5vw,5.5rem);line-height:.98;letter-spacing:-.055em;margin:22px 0 24px;max-width:740px}.gradient-text{background:linear-gradient(90deg,#fff 0%,#bdefff 38%,#9eabff 72%,#c2b7ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:clamp(1.06rem,2vw,1.28rem);color:var(--muted);max-width:680px;margin:0}.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:750;border:1px solid var(--line)}.btn-primary{background:linear-gradient(135deg,#4dbfe8,#5b77ff);color:#fff;border-color:transparent;box-shadow:0 12px 30px rgba(79,118,255,.23)}.btn-secondary{background:rgba(255,255,255,.04);color:#dce8f7}.trustline{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;color:#8498b4;font-size:.84rem}.trustline span{padding-right:14px;border-right:1px solid var(--line)}.trustline span:last-child{border-right:0}
+    .hero-visual{position:relative;min-height:520px}.orb{position:absolute;width:420px;height:420px;border-radius:50%;right:2%;top:8%;background:radial-gradient(circle at 38% 35%,rgba(97,216,255,.48),rgba(93,124,255,.20) 28%,rgba(139,108,255,.10) 52%,transparent 70%);filter:blur(10px)}.visual-shell{position:relative;height:520px;border:1px solid rgba(255,255,255,.11);border-radius:28px;background:linear-gradient(160deg,rgba(17,31,56,.92),rgba(8,17,32,.78));box-shadow:var(--shadow);overflow:hidden}.visual-shell:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 72% 22%,rgba(97,216,255,.14),transparent 25%),radial-gradient(circle at 25% 80%,rgba(139,108,255,.12),transparent 25%)}.visual-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:32px 32px}.viz-label{position:absolute;top:18px;left:20px;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:#7e94b2}.node-card{position:absolute;border:1px solid rgba(255,255,255,.13);border-radius:16px;background:rgba(10,22,41,.82);backdrop-filter:blur(10px);box-shadow:0 12px 40px rgba(0,0,0,.18)}.node-card h4{margin:0 0 5px;font-size:.88rem}.node-card p{margin:0;color:#7f94b1;font-size:.72rem}.agent-card{left:34px;top:76px;width:190px;padding:16px}.robot-card{right:28px;top:68px;width:178px;padding:14px}.cfd-card{left:48px;bottom:38px;width:205px;padding:14px}.aero-card{right:32px;bottom:44px;width:190px;padding:14px}.center-core{position:absolute;left:50%;top:50%;width:144px;height:144px;transform:translate(-50%,-50%);border-radius:50%;display:grid;place-items:center;text-align:center;background:radial-gradient(circle at 38% 32%,rgba(97,216,255,.33),rgba(93,124,255,.17) 45%,rgba(12,28,51,.9) 72%);border:1px solid rgba(119,209,255,.32);box-shadow:0 0 65px rgba(93,124,255,.22),inset 0 0 28px rgba(97,216,255,.08)}.center-core strong{display:block;font-size:.92rem}.center-core span{display:block;color:#8fb3d4;font-size:.69rem;margin-top:2px}.wire{position:absolute;height:1px;transform-origin:left center;background:linear-gradient(90deg,rgba(97,216,255,.08),rgba(97,216,255,.6),rgba(139,108,255,.18));box-shadow:0 0 9px rgba(97,216,255,.18)}.w1{left:198px;top:156px;width:135px;transform:rotate(24deg)}.w2{left:320px;top:165px;width:118px;transform:rotate(-26deg)}.w3{left:210px;top:355px;width:126px;transform:rotate(-24deg)}.w4{left:326px;top:354px;width:113px;transform:rotate(26deg)}
+    .mini-network{height:78px;margin-top:10px;position:relative}.mini-network span{position:absolute;width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 14px rgba(97,216,255,.5)}.mini-network span:nth-child(1){left:12px;top:12px}.mini-network span:nth-child(2){left:65px;top:32px}.mini-network span:nth-child(3){left:123px;top:9px}.mini-network span:nth-child(4){left:142px;top:55px}.mini-network span:nth-child(5){left:43px;top:58px}.mini-network:before,.mini-network:after{content:"";position:absolute;left:17px;top:17px;width:130px;height:1px;background:linear-gradient(90deg,var(--cyan),transparent 80%);transform:rotate(13deg)}.mini-network:after{left:45px;top:54px;width:102px;transform:rotate(-19deg)}
+    .robot-icon{height:80px;margin-top:6px;position:relative}.robot-icon .head{position:absolute;left:56px;top:4px;width:48px;height:33px;border:1px solid #7ddcff;border-radius:12px;background:rgba(97,216,255,.08)}.robot-icon .head:before,.robot-icon .head:after{content:"";position:absolute;width:5px;height:5px;border-radius:50%;background:#9deaff;top:13px}.robot-icon .head:before{left:12px}.robot-icon .head:after{right:12px}.robot-icon .body{position:absolute;left:48px;top:42px;width:65px;height:30px;border:1px solid rgba(157,234,255,.55);border-radius:11px 11px 18px 18px;background:linear-gradient(180deg,rgba(93,124,255,.16),rgba(97,216,255,.04))}.robot-icon .arm{position:absolute;width:30px;height:6px;border-radius:6px;background:#4c709b;top:50px}.robot-icon .left{left:19px;transform:rotate(-18deg)}.robot-icon .right{right:16px;transform:rotate(18deg)}
+    .flow{height:82px;margin-top:8px;position:relative;overflow:hidden;border-radius:10px;background:linear-gradient(90deg,rgba(33,95,165,.18),rgba(97,216,255,.05))}.flow i{position:absolute;left:-15%;width:130%;height:1px;background:linear-gradient(90deg,transparent,#5ba6ff,#7ff0d0,transparent);border-radius:50%}.flow i:nth-child(1){top:14px;transform:rotate(5deg)}.flow i:nth-child(2){top:28px;transform:rotate(-4deg)}.flow i:nth-child(3){top:43px;transform:rotate(7deg)}.flow i:nth-child(4){top:58px;transform:rotate(-6deg)}.flow i:nth-child(5){top:70px;transform:rotate(3deg)}
+    .particles{height:82px;margin-top:6px;position:relative}.particles b{position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.24);background:radial-gradient(circle at 35% 30%,#bff6ff,#6f80ff 48%,#352b63 76%);box-shadow:0 0 18px rgba(93,124,255,.2)}.particles b:nth-child(1){width:29px;height:29px;left:10px;top:9px}.particles b:nth-child(2){width:18px;height:18px;left:57px;top:39px}.particles b:nth-child(3){width:38px;height:38px;left:91px;top:11px}.particles b:nth-child(4){width:14px;height:14px;left:143px;top:51px}.particles b:nth-child(5){width:23px;height:23px;left:25px;top:53px}
+    section{padding:88px 0}.section-kicker{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:#78d9f5;font-weight:800;margin-bottom:11px}h2{font-size:clamp(2rem,4.6vw,3.2rem);letter-spacing:-.04em;line-height:1.06;margin:0 0 16px}.section-intro{color:var(--muted);max-width:820px;margin:0 0 38px;font-size:1.02rem}.subtle{background:#091426}.cap-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.cap-card{position:relative;overflow:hidden;min-height:275px;padding:28px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(155deg,rgba(18,35,62,.96),rgba(10,21,39,.96));box-shadow:0 14px 42px rgba(0,0,0,.13)}.cap-card:before{content:"";position:absolute;right:-70px;top:-70px;width:190px;height:190px;border-radius:50%;background:radial-gradient(circle,rgba(97,216,255,.12),transparent 68%)}.cap-no{color:#6e86a6;font-weight:800;font-size:.78rem;letter-spacing:.12em}.cap-card h3{font-size:1.35rem;line-height:1.2;margin:14px 0 10px}.cap-card p{color:#9fb0c8;margin:0 0 17px}.tags{display:flex;gap:8px;flex-wrap:wrap}.tag{font-size:.76rem;padding:6px 9px;border:1px solid rgba(255,255,255,.10);border-radius:999px;color:#bfd0e4;background:rgba(255,255,255,.03)}
+    .build-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.build-card{padding:23px;border-radius:18px;border:1px solid var(--line);background:rgba(255,255,255,.025)}.build-icon{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(97,216,255,.16),rgba(93,124,255,.15));border:1px solid rgba(97,216,255,.16);margin-bottom:15px;font-size:1.1rem}.build-card h3{margin:0 0 8px;font-size:1.02rem}.build-card p{margin:0;color:#91a4bf;font-size:.91rem}
+    .why{background:linear-gradient(180deg,#0a1527 0%,#07101f 100%)}.why-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:34px;align-items:stretch}.why-panel{padding:31px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(160deg,rgba(18,35,62,.86),rgba(9,19,35,.95))}.why-list{display:grid;gap:18px}.why-item{display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:start}.why-item span{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:rgba(97,216,255,.08);border:1px solid rgba(97,216,255,.15);color:#9deaff;font-weight:800}.why-item h3{margin:0 0 4px;font-size:1.02rem}.why-item p{margin:0;color:#94a8c2;font-size:.91rem}.metric-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.metric{min-height:132px;padding:20px;border-radius:16px;background:rgba(255,255,255,.035);border:1px solid var(--line)}.metric strong{display:block;font-size:1.28rem;margin-bottom:6px}.metric span{color:#8fa5bf;font-size:.86rem}
+    .process{background:#0a1527}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{padding:24px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.025)}.step-num{font-size:.77rem;color:#75d9f5;font-weight:800;letter-spacing:.12em}.step h3{margin:11px 0 7px}.step p{margin:0;color:#91a5bf;font-size:.92rem}
+    .business-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}.box{background:linear-gradient(160deg,rgba(18,35,62,.88),rgba(10,21,39,.96));border:1px solid var(--line);border-radius:20px;padding:28px}.box dl{display:grid;grid-template-columns:170px 1fr;gap:12px 18px;margin:0}.box dt{font-weight:800;color:#dce8f7}.box dd{margin:0;color:#96aac4}.legal-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.legal-grid h3{margin-top:0}.legal-grid p{color:#96aac4}.contact-card{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:32px;border:1px solid rgba(97,216,255,.16);border-radius:22px;background:linear-gradient(135deg,rgba(23,48,78,.88),rgba(19,31,67,.86));box-shadow:var(--shadow)}.contact-card p{margin:4px 0 0;color:#a8bad0}.contact-email{white-space:nowrap;text-decoration:none;font-weight:800;color:#c9f4ff;padding:12px 16px;border-radius:12px;border:1px solid rgba(97,216,255,.22);background:rgba(97,216,255,.06)}
+    footer{border-top:1px solid var(--line);padding:30px 0;color:#7186a2;font-size:.88rem;background:#060e1a}footer a{color:#92dff4}
+    @media(max-width:980px){.hero-grid,.why-grid,.business-grid{grid-template-columns:1fr}.hero{min-height:auto}.hero-visual{min-height:500px}.visual-shell{height:500px}.build-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:760px){.nav{padding:16px 0;align-items:flex-start;flex-direction:column}.navlinks{gap:12px 16px}.hero{padding-top:60px}.cap-grid,.build-grid,.steps,.legal-grid,.metric-grid{grid-template-columns:1fr}.hero-visual{min-height:430px}.visual-shell{height:430px}.agent-card{left:18px;top:62px;width:155px}.robot-card{right:18px;top:60px;width:145px}.cfd-card{left:20px;bottom:28px;width:160px}.aero-card{right:18px;bottom:30px;width:150px}.center-core{width:110px;height:110px}.wire{display:none}.node-card p{display:none}.mini-network,.robot-icon,.flow,.particles{transform:scale(.82);transform-origin:left top}.box dl{grid-template-columns:1fr;gap:4px}.box dd{margin-bottom:12px}.contact-card{align-items:flex-start;flex-direction:column}.contact-email{white-space:normal}}
   </style>
 </head>
 <body>
-  <header>
-    <div class="wrap nav">
-      <a class="brand" href="#top">AtmoNex LLC</a>
-      <nav class="navlinks" aria-label="Primary navigation">
-        <a href="#about">About</a><a href="#services">Services</a><a href="#process">How We Work</a><a href="#business">Business</a><a href="#terms">Terms & Refunds</a><a href="#contact">Contact</a>
-      </nav>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><span class="brandmark"></span><span>AtmoNex LLC</span></a>
+    <nav class="navlinks" aria-label="Primary navigation">
+      <a href="#capabilities">Capabilities</a><a href="#solutions">Solutions</a><a href="#why">Why AtmoNex</a><a href="#business">Business</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow"><i></i> Scientific AI · Simulation · Digital Intelligence</div>
+        <h1><span class="gradient-text">AI Agents and Scientific Simulation</span> for the Physical World</h1>
+        <p class="lead">AtmoNex builds vertical AI solutions, research agents, world-model and simulation platforms, CFD workflows, and high-fidelity scientific computing systems for robotics, environmental applications, and complex physical processes.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#capabilities">Explore Capabilities →</a>
+          <a class="btn btn-secondary" href="mailto:blueingel@hotmail.com">Contact Us</a>
+        </div>
+        <div class="trustline"><span>Remote technical services</span><span>Project-based delivery</span><span>Research-to-deployment workflows</span></div>
+      </div>
+
+      <div class="hero-visual" aria-label="Scientific AI and simulation illustration">
+        <div class="orb"></div>
+        <div class="visual-shell">
+          <div class="visual-grid"></div><div class="viz-label">AtmoNex Intelligence Stack</div>
+          <div class="node-card agent-card"><h4>Research Agent</h4><p>LLM + tools + scientific workflows</p><div class="mini-network"><span></span><span></span><span></span><span></span><span></span></div></div>
+          <div class="node-card robot-card"><h4>World Model</h4><p>Embodied AI & digital twins</p><div class="robot-icon"><div class="head"></div><div class="body"></div><div class="arm left"></div><div class="arm right"></div></div></div>
+          <div class="node-card cfd-card"><h4>Physics Simulation</h4><p>CFD, transport & flow systems</p><div class="flow"><i></i><i></i><i></i><i></i><i></i></div></div>
+          <div class="node-card aero-card"><h4>Aerosol Computing</h4><p>High-fidelity particle states</p><div class="particles"><b></b><b></b><b></b><b></b><b></b></div></div>
+          <div class="center-core"><div><strong>AtmoNex Core</strong><span>AI × Physics × Data</span></div></div>
+          <i class="wire w1"></i><i class="wire w2"></i><i class="wire w3"></i><i class="wire w4"></i>
+        </div>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <main id="top">
-    <section class="hero">
-      <div class="wrap">
-        <div class="eyebrow">SCIENTIFIC COMPUTING · ENVIRONMENTAL TECHNOLOGY</div>
-        <h1>Modeling, data, and software for complex environmental problems.</h1>
-        <p class="lead">AtmoNex LLC provides remote scientific and technical consulting in environmental science, climate, air quality, computational modeling, artificial intelligence, data analytics, and related software solutions.</p>
-        <a class="cta" href="mailto:blueingel@hotmail.com">Contact AtmoNex</a>
+  <section id="capabilities" class="subtle">
+    <div class="wrap">
+      <div class="section-kicker">Core Capability Areas</div>
+      <h2>From domain intelligence to high-fidelity simulation.</h2>
+      <p class="section-intro">AtmoNex combines AI-native workflow design with physics-based modeling and scientific computing to solve complex domain problems that require more than generic software.</p>
+      <div class="cap-grid">
+        <article class="cap-card"><div class="cap-no">01 · VERTICAL AI</div><h3>Vertical AI & Research Agents</h3><p>Domain-specific AI agents that connect large language models with scientific tools, simulation codes, datasets, code execution, literature workflows, and technical reporting.</p><div class="tags"><span class="tag">Research agents</span><span class="tag">Workflow automation</span><span class="tag">Scientific coding</span><span class="tag">Data analysis</span></div></article>
+        <article class="cap-card"><div class="cap-no">02 · EMBODIED INTELLIGENCE</div><h3>World Models & Simulation Platforms</h3><p>World-model-driven simulation environments, digital twins, scene reconstruction, and data-generation workflows for robotics, embodied intelligence, perception, planning, and evaluation.</p><div class="tags"><span class="tag">World models</span><span class="tag">Digital twins</span><span class="tag">Real-to-Sim</span><span class="tag">Robot simulation</span></div></article>
+        <article class="cap-card"><div class="cap-no">03 · PHYSICS COMPUTING</div><h3>CFD & Physics-Based Simulation</h3><p>Computational fluid dynamics, airflow and transport modeling, ventilation analysis, multiphysics workflows, and customized numerical pipelines for engineering and environmental systems.</p><div class="tags"><span class="tag">CFD</span><span class="tag">Flow & transport</span><span class="tag">Indoor environment</span><span class="tag">HPC workflows</span></div></article>
+        <article class="cap-card"><div class="cap-no">04 · HIGH-FIDELITY MODELING</div><h3>Aerosol, Atmosphere & Environmental Systems</h3><p>Advanced atmospheric and aerosol modeling, including mixing-state-resolved particle simulation, heterogeneous chemistry, WRF/CMAQ/CESM workflows, remote sensing, GIS, and environmental intelligence.</p><div class="tags"><span class="tag">Aerosol microphysics</span><span class="tag">Mixing state</span><span class="tag">WRF · CMAQ · CESM</span><span class="tag">GIS & remote sensing</span></div></article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="about">
-      <div class="wrap">
-        <h2>About AtmoNex</h2>
-        <p class="section-intro">We help businesses, research organizations, and professional clients turn scientific questions into reproducible computational workflows, decision-ready analyses, and practical technical solutions. Engagements are typically project-based and tailored to the scope, data, modeling requirements, and deliverables of each client.</p>
+  <section id="solutions">
+    <div class="wrap">
+      <div class="section-kicker">What We Build</div>
+      <h2>Technical systems designed around real scientific work.</h2>
+      <p class="section-intro">Projects can range from targeted analysis to complete computational platforms, depending on the client's scope, data, model requirements, and deployment needs.</p>
+      <div class="build-grid">
+        <article class="build-card"><div class="build-icon">AI</div><h3>Domain AI Agents</h3><p>Specialized assistants connected to domain tools, private data, code, and task execution.</p></article>
+        <article class="build-card"><div class="build-icon">↻</div><h3>Research Automation Systems</h3><p>Automated scientific workflows spanning literature, data, computation, visualization, and reporting.</p></article>
+        <article class="build-card"><div class="build-icon">WM</div><h3>Robotics World Models</h3><p>Simulation and world-model workflows for scene understanding, testing, and embodied intelligence.</p></article>
+        <article class="build-card"><div class="build-icon">∿</div><h3>CFD Simulation Pipelines</h3><p>Repeatable pipelines for flow, transport, indoor environments, and engineering simulation.</p></article>
+        <article class="build-card"><div class="build-icon">●</div><h3>Aerosol Microphysics Platforms</h3><p>Particle-resolved and mixing-state-aware analysis for advanced aerosol process studies.</p></article>
+        <article class="build-card"><div class="build-icon">ENV</div><h3>Environmental Intelligence</h3><p>Air-quality, climate, exposure, remote-sensing, and geospatial systems for decision support.</p></article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="services" style="padding-top:0">
-      <div class="wrap">
-        <h2>Services</h2>
-        <p class="section-intro">Our work spans atmospheric and environmental modeling, scientific computing, geospatial analysis, AI-assisted analytics, and custom technical development.</p>
-        <div class="grid">
-          <article class="card"><h3>Atmospheric & Air Quality Modeling</h3><p>WRF, CMAQ, CESM and related modeling workflows for meteorology, emissions, atmospheric chemistry, transport, air quality, and scenario analysis.</p></article>
-          <article class="card"><h3>Climate & Environmental Analysis</h3><p>Quantitative analysis of climate, environmental exposure, environmental risk, and scenario-based impacts using scientific datasets and reproducible methods.</p></article>
-          <article class="card"><h3>CFD & Indoor Environment</h3><p>Computational fluid dynamics and related simulation support for airflow, transport, ventilation, and indoor or built-environment applications.</p></article>
-          <article class="card"><h3>Remote Sensing & GIS</h3><p>Geospatial data processing, satellite and remote-sensing analysis, spatial matching, mapping, and GIS-based analytical workflows.</p></article>
-          <article class="card"><h3>AI & Data Analytics</h3><p>Machine-learning, statistical, and data-engineering solutions for scientific prediction, emulation, data fusion, diagnostics, and automated analysis.</p></article>
-          <article class="card"><h3>Custom Scientific Software</h3><p>Development and integration of research software, model-processing tools, automation pipelines, dashboards, and specialized computational applications.</p></article>
+  <section id="why" class="why">
+    <div class="wrap why-grid">
+      <div class="why-panel">
+        <div class="section-kicker">Why AtmoNex</div>
+        <h2>Scientific depth with AI-native execution.</h2>
+        <div class="why-list">
+          <div class="why-item"><span>01</span><div><h3>Scientific depth</h3><p>Strong capability in atmospheric science, aerosol processes, environmental modeling, scientific computing, and quantitative analysis.</p></div></div>
+          <div class="why-item"><span>02</span><div><h3>AI-native workflow design</h3><p>We connect LLMs with tools, code, simulation models, datasets, and task pipelines so AI can move beyond chat into real technical work.</p></div></div>
+          <div class="why-item"><span>03</span><div><h3>From research to deployable systems</h3><p>Engagements can produce software, simulation workflows, dashboards, datasets, model outputs, reports, or integrated research platforms.</p></div></div>
         </div>
       </div>
-    </section>
-
-    <section id="process" class="band">
-      <div class="wrap">
-        <h2>How We Work</h2>
-        <p class="section-intro">Projects are scoped around the client's technical objective, available data, required deliverables, budget, and schedule.</p>
-        <div class="steps">
-          <div class="step"><div class="step-num">01</div><h3>Define the scope</h3><p>We clarify the scientific or technical question, inputs, assumptions, outputs, and acceptance criteria.</p></div>
-          <div class="step"><div class="step-num">02</div><h3>Build and analyze</h3><p>We perform the agreed modeling, data processing, software development, validation, or technical analysis.</p></div>
-          <div class="step"><div class="step-num">03</div><h3>Deliver and document</h3><p>Deliverables may include analysis results, figures, datasets, model outputs, code, reports, or other agreed technical products.</p></div>
+      <div class="why-panel">
+        <div class="metric-grid">
+          <div class="metric"><strong>AI + Tools</strong><span>Agents that operate across code, data, simulation, and reporting systems.</span></div>
+          <div class="metric"><strong>Physics + Data</strong><span>Scientific models combined with modern analytics and machine learning.</span></div>
+          <div class="metric"><strong>High Fidelity</strong><span>Support for detailed particle, transport, atmospheric, and engineering computation.</span></div>
+          <div class="metric"><strong>Custom Delivery</strong><span>Project scopes tailored to the client's scientific question and technical environment.</span></div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="business">
-      <div class="wrap">
-        <h2>Business Information</h2>
-        <p class="section-intro">AtmoNex LLC is a U.S. limited liability company providing remote scientific, environmental, climate, air-quality, artificial-intelligence, data-analytics, research, technical, and related consulting services.</p>
+  <section class="process">
+    <div class="wrap">
+      <div class="section-kicker">How We Work</div>
+      <h2>Clear scope. Reproducible execution. Useful deliverables.</h2>
+      <p class="section-intro">Each engagement is defined around the technical objective, available inputs, assumptions, required outputs, budget, and schedule.</p>
+      <div class="steps">
+        <div class="step"><div class="step-num">01 · SCOPE</div><h3>Define the problem</h3><p>Clarify the scientific or engineering question, data, model assumptions, deliverables, and acceptance criteria.</p></div>
+        <div class="step"><div class="step-num">02 · BUILD</div><h3>Compute and develop</h3><p>Perform modeling, data processing, software development, validation, AI workflow integration, or technical analysis.</p></div>
+        <div class="step"><div class="step-num">03 · DELIVER</div><h3>Document and hand off</h3><p>Deliver agreed outputs such as code, reports, figures, datasets, dashboards, simulation results, or deployable tools.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="business">
+    <div class="wrap">
+      <div class="section-kicker">Business Information</div>
+      <h2>Professional technical services for scientific and engineering clients.</h2>
+      <p class="section-intro">AtmoNex LLC is a U.S. limited liability company providing remote scientific, technical, AI, software, simulation, environmental, and related consulting services.</p>
+      <div class="business-grid">
         <div class="box">
           <dl>
             <dt>Company</dt><dd>AtmoNex LLC</dd>
-            <dt>Industry</dt><dd>Scientific and technical consulting services</dd>
-            <dt>Customers</dt><dd>Businesses, research organizations, and professional clients</dd>
-            <dt>Billing</dt><dd>Project-based or service-based billing, generally through invoices or payment requests</dd>
-            <dt>Service delivery</dt><dd>Primarily remote and digital, with deliverables defined by the applicable proposal, statement of work, or invoice</dd>
-            <dt>Contact</dt><dd><a href="mailto:blueingel@hotmail.com">blueingel@hotmail.com</a></dd>
+            <dt>Industry</dt><dd>Scientific and technical consulting; AI, software, and simulation solutions</dd>
+            <dt>Clients</dt><dd>Businesses, research organizations, engineering teams, and professional clients</dd>
+            <dt>Service model</dt><dd>Remote, project-based, service-based, or milestone-based engagements</dd>
+            <dt>Deliverables</dt><dd>Technical analysis, software tools, simulation outputs, reports, datasets, dashboards, and customized computational workflows</dd>
+            <dt>Billing</dt><dd>Invoices, payment requests, and milestone-based project billing</dd>
           </dl>
         </div>
-      </div>
-    </section>
-
-    <section id="terms" style="padding-top:0">
-      <div class="wrap">
-        <h2>Terms, Cancellation & Refund Policy</h2>
-        <p class="section-intro">These general terms apply unless a written proposal, statement of work, contract, or invoice states different terms.</p>
-        <div class="legal-grid">
-          <div class="card">
-            <h3>Service Terms</h3>
-            <p>Scope, deliverables, pricing, schedule, and payment terms are agreed with each client in writing. AtmoNex LLC provides professional technical and consulting services; no physical goods are sold through this website.</p>
-            <p>Invoices are payable according to the due date and currency shown on the invoice. Payment may be processed by a third-party payment provider.</p>
-          </div>
-          <div class="card">
-            <h3>Cancellation & Refunds</h3>
-            <p>Clients may request cancellation by contacting AtmoNex LLC. Fees for work already performed, time already incurred, and custom deliverables already provided are generally non-refundable unless otherwise required by law or agreed in writing.</p>
-            <p>For prepaid amounts relating to work not yet performed, any refund will follow the applicable written agreement. Questions or billing concerns should be sent to <a href="mailto:blueingel@hotmail.com">blueingel@hotmail.com</a>.</p>
-          </div>
+        <div class="box">
+          <h3 style="margin-top:0">Business Description</h3>
+          <p style="color:#96aac4;margin-bottom:0">AtmoNex LLC provides scientific computing and technical consulting services, including vertical AI and research agents, robotics and world-model simulation platforms, computational fluid dynamics, atmospheric and aerosol modeling, environmental data analysis, remote sensing, GIS, and custom scientific software. Services are generally delivered remotely and billed on a project, service, or milestone basis.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact" class="band">
-      <div class="wrap">
-        <h2>Contact</h2>
-        <p class="section-intro">For project inquiries, invoices, service questions, cancellations, or billing support, contact AtmoNex LLC by email.</p>
-        <p><strong>Email:</strong> <a href="mailto:blueingel@hotmail.com">blueingel@hotmail.com</a></p>
+  <section id="terms" class="subtle">
+    <div class="wrap">
+      <div class="section-kicker">Commercial Terms</div>
+      <h2>Terms, cancellation, and refunds.</h2>
+      <p class="section-intro">These general terms apply unless a written proposal, statement of work, contract, or invoice states different terms.</p>
+      <div class="legal-grid">
+        <div class="box"><h3>Service Terms</h3><p>Scope, deliverables, pricing, schedule, and payment terms are agreed with each client in writing. AtmoNex LLC provides professional technical and consulting services; no physical goods are sold through this website.</p><p>Invoices are payable according to the due date and currency shown on the invoice. Payment may be processed by a third-party payment provider.</p></div>
+        <div class="box"><h3>Cancellation & Refunds</h3><p>Clients may request cancellation by contacting AtmoNex LLC. Fees for work already performed, time already incurred, and custom deliverables already provided are generally non-refundable unless otherwise required by law or agreed in writing.</p><p>For prepaid amounts relating to work not yet performed, any refund will follow the applicable written agreement. Billing concerns should be sent to the contact email below.</p></div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer><div class="wrap">© 2026 AtmoNex LLC. All rights reserved. · Contact: <a href="mailto:blueingel@hotmail.com">blueingel@hotmail.com</a></div></footer>
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-card">
+        <div><div class="section-kicker">Contact AtmoNex</div><h2 style="font-size:2rem;margin-bottom:6px">Start with the technical problem.</h2><p>For project inquiries, collaborations, invoices, service questions, cancellations, or billing support, contact us by email.</p></div>
+        <a class="contact-email" href="mailto:blueingel@hotmail.com">blueingel@hotmail.com</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">© 2026 AtmoNex LLC. All rights reserved. · <a href="#terms">Terms & Refunds</a> · <a href="mailto:blueingel@hotmail.com">Contact</a></div></footer>
 </body>
 </html>
